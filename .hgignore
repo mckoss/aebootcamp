@@ -1,0 +1,10 @@
+syntax: glob
+
+*.pyc
+*.class
+.svn/*
+eclipse/*
+bin/*
+.classpath
+.settings/*
+.project
