@@ -1,0 +1,1 @@
+appcfg --no_cookies update %1

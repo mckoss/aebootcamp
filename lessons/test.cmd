@@ -1,1 +1,1 @@
-dev_appserver.py -p 80 --clear_datastore %1
+dev_appserver -p 80 --clear_datastore %1
