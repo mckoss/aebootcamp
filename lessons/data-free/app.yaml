@@ -1,0 +1,50 @@
+application: aebootcamp-mckoss
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /images
+  static_dir: images
+  
+- url: /styles
+  static_dir: styles
+
+- url: /favicon.ico
+  static_files: images/favicon.ico
+  upload: images/favicon.ico
+
+- url: /robots.txt
+  static_files: files/robots.txt
+  upload: files/robots.txt
+  
+# Python Shell for administrative tasks
+# See http://code.google.com/p/google-app-engine-samples/source/browse/trunk/shell
+- url: /shell
+  script: shell.py
+  login: admin
+  
+# For Google Webmaster Tools domain validation (CHANGE TO YOUR OWN FILE NAME)
+- url: /google9eab28331a1ab405.html
+  static_files: static/google9eab28331a1ab405.html
+  upload: static/google9eab28331a1ab405.html
+  
+- url: /.*
+  script: main.py
+
+skip_files: |
+ ^(.*/)?(
+ ([Tt]humbs\.db)|
+ (app\.yaml)|
+ (app\.yml)|
+ (index\.yaml)|
+ (index\.yml)|
+ (#.*#)|
+ (.*~)|
+ (.*\.bak)|
+ (.*\.psd)|
+ (.*\.ai)|
+ (.*\.py[co])|
+ (.*/RCS/.*)|
+ (\..*)|
+ )$
