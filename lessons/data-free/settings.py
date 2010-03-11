@@ -19,13 +19,14 @@ ADMINS = (
 """
 Request filter customization strings
 """
-sSiteName = "App Engine Bootcamp Data-Free Sample"
+sSiteName = "Data-Free"
 sSiteDomain = "aebootcamp-mckoss.appspot.com"
 sSiteHost = sSiteDomain
-sSiteTitle = "A sample App Engine application"
+sSiteTitle = "Data-Free - App Engine template"
 sSiteTagline = "A clean slate for building your own application."
 sSecretName = "secret.1"
 sAnalyticsCode = "UA-8981361-1"
+sTwitterUser = "startpad"
 
 MANAGERS = ADMINS
 

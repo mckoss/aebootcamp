@@ -202,6 +202,8 @@ class ReqFilter(object):
             'site_title': settings.sSiteTitle,
             'site_tagline': settings.sSiteTagline,
             'site_admin': "%s (%s)" % (settings.ADMINS[0][1], settings.ADMINS[0][0]),
+            
+            'twitter_user': settings.sTwitterUser,
     
             'analytics_code': settings.sAnalyticsCode,
             

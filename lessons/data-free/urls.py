@@ -10,5 +10,6 @@ urlpatterns.extend(reqfilter.json_urls())
 urlpatterns.extend(patterns('',
     (r'^$', direct_to_template, {'template':'home.html'}),
     (r'^about$', direct_to_template, {'template':'about.html'}),
+    (r'^terms-of-service$', direct_to_template, {'template':'tos.html'}),
 
 ))
