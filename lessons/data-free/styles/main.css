@@ -49,6 +49,17 @@ img {
 border: 0;
 }
 
+ul {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+li {
+line-height: 20px;
+margin-left: -5px;
+margin-bottom: 3px;
+}
+
 /* =================================================
    Page-layout styles (based on page.html master
    template)

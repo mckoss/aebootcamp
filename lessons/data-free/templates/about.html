@@ -1,7 +1,12 @@
 {% extends "page.html" %}
 {% block pagebody %}
-<h2>About Us</h2>
+<h2>About {{site_creator}}</h2>
 
-<p>We are mighty developers.</p>
+<p>We are the creators of {{site_name}}.</p>
+
+<p>You can contact us at {{creator_address}}.</p>
+
+<p style="font-style:italic;">This site was created from an <a href="http://code.google.com/p/aebootcamp/">open source App Engine template</a>
+licensed by <a href="http://startpad.org/">StartPad</a>.
 
 {% endblock pagebody %}

@@ -27,6 +27,8 @@ sSiteTagline = "A clean slate for building your own application."
 sSecretName = "secret.1"
 sAnalyticsCode = "UA-8981361-1"
 sTwitterUser = "startpad"
+sCreator = "StartPad"
+sCreatorAddress = "811 First Ave, Suite 480, Seattle, WA 98104"
 
 MANAGERS = ADMINS
 
