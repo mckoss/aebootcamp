@@ -1,5 +1,5 @@
 application: aebootcamp-mckoss
-version: 1
+version: hello-cgi
 runtime: python
 api_version: 1
 

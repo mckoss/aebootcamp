@@ -1,5 +1,5 @@
 application: aebootcamp-mckoss
-version: 1
+version: data-free
 runtime: python
 api_version: 1
 
@@ -9,6 +9,9 @@ handlers:
   
 - url: /styles
   static_dir: styles
+  
+- url: /scripts
+  static_dir: scripts
 
 - url: /favicon.ico
   static_files: images/favicon.ico
@@ -24,7 +27,8 @@ handlers:
   script: shell.py
   login: admin
   
-# For Google Webmaster Tools domain validation (CHANGE TO YOUR OWN FILE NAME)
+# For Google Webmaster Tools domain validation
+# TODO: Get your own file name from webmaster tools
 - url: /google9eab28331a1ab405.html
   static_files: static/google9eab28331a1ab405.html
   upload: static/google9eab28331a1ab405.html

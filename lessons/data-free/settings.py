@@ -13,12 +13,14 @@ DEBUG = (ENVIRONMENT == "local")
 #DEBUG = False
 
 ADMINS = (
+    # TODO: Change to your name and email address
     ('Mike Koss', 'mckoss@startpad.org'),
 )
 
 """
 Request filter customization strings
 """
+# TODO: Customize for your application
 sSiteName = "Data-Free"
 sSiteDomain = "aebootcamp-mckoss.appspot.com"
 sSiteHost = sSiteDomain
@@ -52,7 +54,6 @@ SECRET_KEY = ''
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.load_template_source',
     'django.template.loaders.app_directories.load_template_source',
-#     'django.template.loaders.eggs.load_template_source',
 )
 
 MIDDLEWARE_CLASSES = (

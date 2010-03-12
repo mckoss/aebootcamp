@@ -99,8 +99,6 @@ class enum(object):
         return self.__dict__['__dict'][name]
 
     def __setattr__(self, name, value):
-        # TODO: Is this really needed?  I just found a bug that looks like this
-        # code is never executed?
         if self.__init:
             self.__dict__[name] = value
         else:

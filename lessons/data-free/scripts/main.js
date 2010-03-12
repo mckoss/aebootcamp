@@ -1,14 +1,8 @@
-// PagesLike.com main.js
-// Copyright (c) Mike Koss (mckoss@startpad.org)
-
-global_namespace.Define('pageslike', function(NS) {
-	var Timer = NS.Import('startpad.timer');
+global_namespace.Define('data-free.startpad.org', function(NS) {
 
 NS.Extend(NS, {
-	sSiteName: "PagesLike",
 	sCSRF: "",
 	apikey: undefined,
-	msLoaded: Timer.MSNow(),
 
 Init: function(sCSRF)
 	{
