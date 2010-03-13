@@ -439,7 +439,7 @@ def RenderResponse(sTemplate, mVars=None, mimetype=None):
 def get_request():
     return local.req
 
-dtBase = datetime(2009,11,24)
+dtBase = datetime(2010,01,01)
 def secs_from_datetime(dt):
     delta = dt - dtBase
     secs = delta.days*24*60*60 + delta.seconds

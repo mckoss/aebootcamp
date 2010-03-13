@@ -1,7 +1,7 @@
 import reqfilter
 
 from django import forms
-from django.shortcuts import render_to_response, redirect
+from django.shortcuts import redirect
 from guestbook.models import Greeting
 
 class GuestbookForm(forms.Form):
