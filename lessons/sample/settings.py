@@ -85,6 +85,7 @@ INSTALLED_APPS = (
     # TODO Are these two really used?
     'django.contrib.humanize',
     'reqfilter',
+    'guestbook',
 )
 
 #TEMPLATE_STRING_IF_INVALID = "***ERROR***"
