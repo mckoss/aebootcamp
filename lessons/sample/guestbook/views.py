@@ -1,3 +1,5 @@
+import reqfilter
+
 from django import forms
 from django.shortcuts import render_to_response, redirect
 from guestbook.models import Greeting
@@ -17,4 +19,4 @@ def list_entries(request):
         greeting.put()
         return redirect(list_entries)
     greetings_list = Greeting.all().order('-date').fetch(10)
-    return render_to_response('guestbook/index.html', locals())
+    return reqfilter.RenderResponse('guestbook/index.html', locals())
