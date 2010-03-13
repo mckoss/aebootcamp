@@ -1,6 +1,5 @@
-from django.shortcuts import render_to_response, redirect
-from django.template import RequestContext
 from django import forms
+from django.shortcuts import render_to_response, redirect
 from guestbook.models import Greeting
 
 class GuestbookForm(forms.Form):
@@ -18,5 +17,4 @@ def list_entries(request):
         greeting.put()
         return redirect(list_entries)
     greetings_list = Greeting.all().order('-date').fetch(10)
-    return render_to_response('guestbook/index.html', locals(),
-                              context_instance=RequestContext(request))
+    return render_to_response('guestbook/index.html', locals())
