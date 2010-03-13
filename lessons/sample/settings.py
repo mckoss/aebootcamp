@@ -21,10 +21,10 @@ ADMINS = (
 Request filter customization strings
 """
 # TODO: Customize for your application
-sSiteName = "Data-Free"
+sSiteName = "Data"
 sSiteDomain = "aebootcamp-mckoss.appspot.com"
 sSiteHost = sSiteDomain
-sSiteTitle = "Data-Free - App Engine template"
+sSiteTitle = "Data - App Engine template"
 sSiteTagline = "A clean slate for building your own application."
 sSecretName = "secret.1"
 sAnalyticsCode = "UA-8981361-1"
