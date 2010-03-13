@@ -1,6 +1,6 @@
-{% extends "master.html" %}
+{% extends "page.html" %}
 
-{% block body %}
+{% block pagebody %}
 <h1>Guestbook</h1>
 {% for greeting in greetings_list %}
 <p><a href="{{ greeting.website }}">{{ greeting.author }}</a> said
