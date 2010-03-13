@@ -1,0 +1,8 @@
+application: aebootcamp-mckoss
+version: hello-cgi
+runtime: python
+api_version: 1
+
+handlers:
+- url: /.*
+  script: helloworld.py

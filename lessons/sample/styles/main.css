@@ -1,0 +1,110 @@
+body {
+margin: 0;
+padding: 0;
+font-family: verdana, arial, sans-serif;
+font-size: 16px;
+}
+
+div {
+padding:0;
+margin:0;
+}
+
+h1 {
+margin: 0;
+font-size: 24px;
+white-space: nowrap;
+overflow: hidden;
+}
+
+h2 {
+margin: 0 0 10px 0;
+font-size: 22px;
+font-weight: normal;
+}
+
+p {
+margin: 10px 0;
+}
+
+table {
+border-collapse: collapse;
+}
+
+p.error {
+font-style: italic;
+color: red;
+text-align:center;
+}
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+img {
+border: 0;
+}
+
+ul {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+li {
+line-height: 20px;
+margin-left: -5px;
+margin-bottom: 3px;
+}
+
+/* =================================================
+   Page-layout styles (based on page.html master
+   template)
+   ================================================= */
+
+div.page {
+width: 980px;
+margin: auto;
+}
+
+div.head {
+position: relative;
+margin: 10px 0;
+}
+
+div.head img {
+float: left;
+margin-right: 20px;
+}
+
+div.page-heading {
+padding-top: 20px;
+}
+
+div.head p.subhead {
+font-style: italic;
+margin: 5px 0;
+}
+
+div.pagebody {
+clear: both;
+padding-top: 20px;
+}
+
+div.bottom {
+clear:both;
+text-align:center;
+padding: 15px 0 5px 0;
+}
+
+div.timer {
+clear: both;
+padding-top:15px;
+text-align:center;
+font-size: 10px;
+}
+
+

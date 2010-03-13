@@ -1,0 +1,14 @@
+{% extends "page.html" %}
+{% block pagebody %}
+<h2>About {{site_creator}}</h2>
+
+<p>We are the creators of {{site_name}}.</p>
+
+<p>You can contact us at {{creator_address}}.</p>
+
+<p>- {% for name, email in admins %}{{name}}{% if forloop.last %}{%else%}, {%endif%}{% endfor %}</p>
+
+<p style="font-style:italic;">This site was created from an <a href="http://code.google.com/p/aebootcamp/">open source App Engine template</a>
+licensed by <a href="http://startpad.org/">StartPad</a>.
+
+{% endblock pagebody %}
