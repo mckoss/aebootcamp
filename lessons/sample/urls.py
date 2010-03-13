@@ -12,6 +12,6 @@ urlpatterns.extend(patterns('',
     (r'^about$', direct_to_template, {'template':'about.html'}),
     (r'^terms-of-service$', direct_to_template, {'template':'tos.html'}),
     
-    (r'^add-numbers', views.add_numbers),
+    (r'^add-numbers(?:\.json)?', views.add_numbers),
 
 ))
