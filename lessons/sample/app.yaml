@@ -1,5 +1,5 @@
 application: aebootcamp-mckoss
-version: data-free
+version: data
 runtime: python
 api_version: 1
 
