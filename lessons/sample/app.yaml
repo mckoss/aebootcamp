@@ -2,6 +2,7 @@ application: aebootcamp-mckoss
 version: data-free
 runtime: python
 api_version: 1
+default_expiration: "1d"
 
 handlers:
 - url: /images
