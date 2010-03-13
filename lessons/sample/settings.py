@@ -15,6 +15,7 @@ DEBUG = (ENVIRONMENT == "local")
 ADMINS = (
     # TODO: Change to your name and email address
     ('Mike Koss', 'mckoss@startpad.org'),
+    ('Johann Rocholl', 'johann@rocholl.net'),
 )
 
 """
