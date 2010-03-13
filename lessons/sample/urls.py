@@ -11,5 +11,8 @@ urlpatterns.extend(patterns('',
     (r'^$', direct_to_template, {'template':'home.html'}),
     (r'^about$', direct_to_template, {'template':'about.html'}),
     (r'^terms-of-service$', direct_to_template, {'template':'tos.html'}),
-    (r'guestbook/', include('guestbook.urls')),
+    (r'^guestbook/', include('guestbook.urls')),
+    
+    (r'^add-numbers(?:\.json)?', views.add_numbers),
+
 ))
