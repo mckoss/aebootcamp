@@ -17,6 +17,21 @@ ADMINS = (
     ('Mike Koss', 'mckoss@startpad.org'),
 )
 
+"""
+Request filter customization strings
+"""
+# TODO: Customize for your application
+sSiteName = "Data-Free"
+sSiteDomain = "aebootcamp-mckoss.appspot.com"
+sSiteHost = sSiteDomain
+sSiteTitle = "Data-Free - App Engine template"
+sSiteTagline = "A clean slate for building your own application."
+sSecretName = "secret.1"
+sAnalyticsCode = "UA-8981361-1"
+sTwitterUser = "startpad"
+sCreator = "StartPad"
+sCreatorAddress = "811 First Ave, Suite 480, Seattle, WA 98104"
+
 MANAGERS = ADMINS
 
 DATABASE_ENGINE = ''           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'ado_mssql'.
@@ -43,10 +58,12 @@ TEMPLATE_LOADERS = (
 
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
+    'reqfilter.ReqFilter',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.debug',
+    'reqfilter.GetContext',
     )
 
 # For django.middleware.common.CommonMiddleware
@@ -65,7 +82,9 @@ TEMPLATE_DIRS = (
 CACHE_MIDDLEWARE_SECONDS = 7*24*60*60
 
 INSTALLED_APPS = (
+    # TODO Are these two really used?
     'django.contrib.humanize',
+    'reqfilter',
 )
 
 #TEMPLATE_STRING_IF_INVALID = "***ERROR***"
