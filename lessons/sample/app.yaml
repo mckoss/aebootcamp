@@ -20,7 +20,12 @@ handlers:
 - url: /robots.txt
   static_files: files/robots.txt
   upload: files/robots.txt
-  
+
+# Remote access to the datastore, using remote_console.py
+- url: /remote_api
+  script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
+  login: admin
+
 # Python Shell for administrative tasks
 # See http://code.google.com/p/google-app-engine-samples/source/browse/trunk/shell
 - url: /shell
