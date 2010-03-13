@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block body %}
+<h1>Guestbook</h1>
+{% for greeting in greetings_list %}
+<p><a href="{{ greeting.website }}">{{ greeting.author }}</a> said
+{{ greeting.date|timesince }} ago:<br />
+{{ greeting.content }}</p>
+{% endfor %}
+
+<form action="/guestbook/" method="POST">
+<table>
+{{ guestbook_form }}
+<tr><th></th><td><input type="submit" value="Submit"></td></tr>
+</table>
+</form>
+{% endblock %}
