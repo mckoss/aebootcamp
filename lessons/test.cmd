@@ -1,1 +1,1 @@
-dev_appserver -p 80 --clear_datastore %1
+dev_appserver -p 8080 --clear_datastore %1
